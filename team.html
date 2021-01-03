@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon/favicon-16x16.png">
+    <title>360</title>
+    <meta name="description" content="">
+  </head>
+  <body>
+
+<!-- Header -->
+    <header id="header">
+      <nav>
+        <div class="logo">
+          <img src="resources/images/logo.png" alt="Logo">
+          <span><a href="index.html">360 Charity</a></span>
+        </div>
+        <div class="menu">
+          <ul>
+            <div class="dropdown">
+              <button class="dropbtn">ABOUT
+                <i class="fas fa-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="about.html">About Us</a>
+                <a href="team.html">Team</a>
+              </div>
+            </div>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="https://360charity.square.site/">DONATE</a></li>
+          </ul>
+        </div>
+
+        <a href="javascript:void(0)" class="open" style="font-size: 2rem" onclick="openNav()">&#9776;</a>
+
+      </nav>
+    </header>
+
+    <div class="mobile-overlay" id="mobile">
+      <div class="overlay-content mobile-overlay-main">
+        <ul>
+          <li><button class="dropbtn" onclick="openShop()">ABOUT
+            <i class="fas fa-angle-double-right"></i>
+          </button></li>
+          <div class="o" id="mobileShop">
+            <div class="overlay-content">
+              <a class="backbtn" style="border-bottom:none;color:black;font-size:0.7rem;" onclick="closeShop()">
+                <i class="fas fa-angle-double-left"></i>
+                BACK
+              </a>
+              <ul>
+                <li><a href="about.html" target="_blank">ABOUT US</a></li>
+                <li><a href="team.html" target="_blank">TEAM</a></li>
+              </ul>
+            </div>
+          </div>
+          <li><a href="contact.html" onclick="closeNav()">CONTACT</a></li>
+          <li><a href="https://360charity.square.site/" onclick="closeNav()" target="_blank">DONATE</a></li>
+        </ul>
+      </div>
+      <button class="mobile-overlay-close"><a href="javascript:void(0)" style="border-bottom:none;font-size:2.5rem;color:black" onclick="closeNav()">&times;</a></button>
+    </div>
+
+    <!-- Team -->
+        <div id="team">
+
+          <div class="info">
+            <span class="title">Team</span>
+          </div>
+          <div class="section">
+
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-content">
+          <div class="logo">
+            <img src="resources/images/logo.png" alt="">
+            <span>360 Charity</span>
+          </div>
+          <div class="footer-section">
+            <div class="footer-box">
+              <div class="colour-circle-small"></div>
+              <span>Social</span>
+              <ul>
+                <li><a href="https://www.instagram.com/360charity" target="_blank">Instagram</a></li>
+                <li><a href="https://360charity.square.site/" target="_blank">Donate</a></li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <div class="colour-circle-small"></div>
+              <span>Learn</span>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>360 Charity</p>
+      </footer>
+
+      </div>
+
+
+      <script src="./resources/javascript/main.js"></script>
+      </body>
+      </html>
