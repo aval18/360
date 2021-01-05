@@ -880,6 +880,9 @@ nav li {
       .row-1, .row-2, .row-3, .row-4 {
         display: block;
       }
+      .parallax {
+        background-attachment: scroll;
+      }
       .parallax-inside {
         width: auto;
         height: 25rem;
@@ -904,7 +907,7 @@ nav li {
         margin-bottom: 2rem;
       }
       .member .text-content {
-        margin-top: 9rem;
+        margin-top: 12rem;
       }
 
 
