@@ -61,7 +61,7 @@ ol, ul {
 
 
 .title {
-  font-size: 8rem;
+  font-size: 6rem;
   text-align: center;
 }
 
@@ -231,6 +231,7 @@ nav li {
   color: white;
 }
 
+
 .parallax {
   background-attachment: fixed;
   background-position: center;
@@ -294,7 +295,7 @@ nav li {
     padding: 2rem;
     margin: 7rem;
   }
-  .info img {
+  .info .img-large {
     height: 40rem;
     width: 80rem;
     object-fit: cover;
@@ -303,6 +304,9 @@ nav li {
   #home .info {
     margin: auto;
     margin-top:7rem;
+  }
+  .info .subject {
+    margin-bottom: 18rem;
   }
 
   .info .title {
@@ -313,15 +317,26 @@ nav li {
     z-index: 1;
   }
 
-  #home .info img {
+  .info .img-sm {
     width: 40rem;
     margin-top: 3rem;
     margin-left: 3rem;
     height: 30rem;
     object-position: center;
     z-index: 1;
+    object-fit: cover;
   }
+  .overlay-img {
+    position: absolute;
+    left: 30%;
+    margin-top: 24rem;
+    width: 50rem;
+    height: 20rem;
+    object-fit: cover;
+  }
+  .code img:hover {
 
+  }
 
   .code {
     margin-top: 0;
@@ -329,21 +344,13 @@ nav li {
   }
   #home .subject {
     display: flex;
+    justify-content: center;
   }
 
   .code p {
-    margin-left: 8rem;
+    margin: 2rem 0 2rem 0;
   }
-  .code .title {
-    right: 5%;
-    margin-top: 4rem;
-    z-index: 2;
-    text-align: left;
-}
-    .code .title, .advantage .title {
-    font-size: 4rem;
-    position: absolute;
-  }
+
   .colour-box {
     background-color: #b86660;
     z-index: 0;
@@ -364,31 +371,41 @@ nav li {
 
 /* Advantages */
 
-  .advantage .title {
-    left: 10%;
-  }
 
   .advantage {
     padding: 0;
-    display: flex;
   }
 
   .advantage-content {
-    width: 33%;
+    width: 28%;
+    border: 2px solid #ececec;
+    margin: 2rem;
+    border-radius: 20px;
+  }
+  .advantage-content:hover {
+    border: 2px solid #b86660;
+    transition: 0.2s;
   }
   .advantage-box {
     display: flex;
-    margin-top: 7rem;
+    margin-top: 5rem;
     padding: 0;
     margin-bottom: 0;
   }
   .advantage-content span {
     font-size: 2rem;
-    padding: 1rem;
   }
   .advantage-content p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0;
+  }
+  .advantage i {
+    font-size: 4rem;
+    color: #b86660;
+    padding-bottom: 2rem;
+  }
+  .advantage-content .text-content {
+    padding: 3rem;
   }
 
 
@@ -437,16 +454,22 @@ nav li {
   /* About */
 
   .section {
-    display: flex;
+    display: block;
     padding: 2rem 5rem;
     justify-content: center;
     max-width: 1500px;
     margin: auto;
-    background-color: #bacdb0;
+    background-color: #;
   }
 
   .subtitle {
     display: block;
+  }
+  .about-content img {
+    width: 40rem;
+    height: 25rem;
+    object-fit: cover;
+    object-position: top;
   }
 
   .vid {
@@ -457,6 +480,10 @@ nav li {
     margin: auto;
   }
   .vid img{
+    width: 100%;
+  }
+  #about .row-1, #about .row-2 {
+    display: flex;
     width: 100%;
   }
   /*
@@ -639,6 +666,7 @@ nav li {
         margin: 0;
         height: 20rem;
         width: 100%;
+        display: none;
       }
       #home .text-content {
         line-height: 2rem;
@@ -697,13 +725,20 @@ nav li {
         width: 100%;
         margin: auto;
       }
-      #home .info img {
+      .info .img-sm {
         height: 15rem;
         width: 20rem;
         margin: 0;
         left: 5%;
         position: absolute;
-        object-position: bottom;
+      }
+      .info .overlay-img {
+        position: absolute;
+        height: 10rem;
+        width: 18rem;
+        left: 28%;
+        margin-top: 13rem;
+        object-position: top;
       }
       .info .subject {
         width: 100%;
@@ -719,13 +754,15 @@ nav li {
         line-height: 1.7rem;
         margin: 1rem;
         text-align: center;
+        margin-bottom: 2rem;
       }
-      .code .title {
-        padding: 0.5rem;
-        right: 0;
-        color: black;
-        text-align: center;
+      .code .subtitle {
+        padding: 1rem;
       }
+      .img-group {
+        margin-top: 20rem;
+      }
+
       .colour-box {
         right: 5%;
         width: 70%;
@@ -741,11 +778,12 @@ nav li {
       #home .advantage .subject, .advantage {
         display: block;
       }
-      #home .advantage {
-        margin-top: 25rem;
+      .advantage .subtitle {
+        margin-top: 28rem;
       }
       .advantage-content {
         width: 100%;
+        margin: 1.5rem 0 1.5rem 0;
       }
       .advantage-content p {
         font-size: 1rem;
@@ -753,13 +791,11 @@ nav li {
       .advantage-content span {
         font-size: 1.8rem;
       }
-      .advantage .title {
-        left: 0;
-        padding-top: 5rem;
-      }
-      .advantage .title, .code .title {
-        color: black;
+      .advantage .subtitle, .code .subtitle {
         font-size: 2rem;
+      }
+      .advantage-content .text-content {
+        padding: 2rem;
       }
 
 
@@ -780,17 +816,14 @@ nav li {
 
     /* About */
 
-      .detail {
-        width: 100%;
+      .about .text-content {
+        text-align: center;
       }
 
       .subtitle{
         font-size: 2.5rem;
       }
-      /*
-      .vid video {
-        width: 100%
-      }*/
+
       .vid {
         width: 60%;
         padding-bottom: 2rem;
@@ -806,11 +839,6 @@ nav li {
         margin-left: 1rem;
       }
 
-      /* Policies */
-      .section, #policies .section {
-        padding: 0;
-        display: block;
-      }
 
       /* Contact */
 
@@ -865,16 +893,24 @@ nav li {
       .inside {
         height: 40rem;
       }
+      .subtitle {
+        font-size: 3rem;
+      }
 
     /* Info */
 
       .info {
         max-width: 1800px;
       }
-      #home .info img {
-        width: 55%;
-        height: 44rem;
+      .info .img-sm {
+        width: 55rem;
+        height: 40rem;
         padding-bottom: 6rem;
+      }
+      .info .overlay-img {
+        height: 25rem;
+        object-position: top;
+        left: 46%;
       }
       .intro .subject {
         margin: 0;
@@ -887,9 +923,6 @@ nav li {
 
     /* Advantage */
 
-      .advantage .title {
-        left: 20%;
-      }
       .advantage-content .text-content {
         padding: 3rem;
         padding-top: 5rem;
