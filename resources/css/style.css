@@ -63,6 +63,7 @@ ol, ul {
 .title {
   font-size: 6rem;
   text-align: center;
+  color: white;
 }
 
 .text-content {
@@ -114,7 +115,7 @@ header {
 }
 
 .menu a:hover {
-  border-bottom: 2px solid #ececec;
+  border-bottom: 2px solid #ecebe3;
   text-decoration: none;
 }
 
@@ -253,7 +254,7 @@ nav li {
   padding: 2rem;
 }
 
-.inside {
+.jumbotron-inside, .parallax-inside {
   width: 50rem;
   height: 35rem;
   margin: auto;
@@ -268,7 +269,7 @@ nav li {
   color: black;
   border: none;
   border-radius: 2rem;
-  border: 2px solid #ececec;
+  border: 2px solid #ecebe3;
   padding: 1rem;
 }
 
@@ -284,7 +285,7 @@ nav li {
 
   .info {
     display: block;
-    margin: auto;;
+    margin: auto;
     margin-top: 140px;
     margin-bottom: 1rem;
     justify-content: center;
@@ -295,17 +296,20 @@ nav li {
     padding: 2rem;
     margin: 7rem;
   }
-  .info .img-large {
-    height: 40rem;
-    width: 80rem;
+  .info .img-lg {
+    height: 50rem;
+    width: 100%;
     object-fit: cover;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10rem;
   }
 
   #home .info {
     margin: auto;
     margin-top:7rem;
   }
-  .info .subject {
+  .code .subject {
     margin-bottom: 18rem;
   }
 
@@ -333,9 +337,6 @@ nav li {
     width: 50rem;
     height: 20rem;
     object-fit: cover;
-  }
-  .code img:hover {
-
   }
 
   .code {
@@ -378,7 +379,7 @@ nav li {
 
   .advantage-content {
     width: 28%;
-    border: 2px solid #ececec;
+    border: 2px solid #ecebe3;
     margin: 2rem;
     border-radius: 20px;
   }
@@ -453,6 +454,18 @@ nav li {
 
   /* About */
 
+  .parallax-page1 {
+    background-image: url("../images/can-2.jpg");
+    object-position: top;
+  }
+  .parallax-page2 {
+    background-image: url("../images/speaker.jpg");
+    object-position: top;
+  }
+  .parallax-page3 {
+    background-image: url("../images/srf-4.jpg");
+  }
+
   .section {
     display: block;
     padding: 2rem 5rem;
@@ -482,9 +495,13 @@ nav li {
   .vid img{
     width: 100%;
   }
-  #about .row-1, #about .row-2 {
+  .row-1, .row-2, .row-3, .row-4 {
     display: flex;
-    width: 100%;
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+  .section .row-2 .text-content {
+    padding-right: 0;
   }
   /*
   .vid video {
@@ -504,6 +521,37 @@ nav li {
     z-index: -1;
     margin-left: 2rem;
   }
+  /* Team */
+
+  .member {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    width: 25%;
+    margin: 2rem;
+  }
+  .member .text-content {
+    text-align: center;
+    border: 2px solid #b86660;
+    margin-top: 8rem;
+  }
+  .member-photo {
+    border-radius:50%;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    position: absolute;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+  .member .text-content:hover {
+    background-color: #b86660;
+    transition: 0.3s;
+    color: white;
+  }
+
+
 
 
   /* Footer */
@@ -662,10 +710,7 @@ nav li {
 
     /* Jumbotron */
 
-      #home .inside {
-        margin: 0;
-        height: 20rem;
-        width: 100%;
+      .jumbotron-inside {
         display: none;
       }
       #home .text-content {
@@ -673,9 +718,6 @@ nav li {
       }
       .title {
         font-size: 4rem;
-      }
-      #home .jumbotron .title {
-        font-size: 2rem;
       }
       #home .jumbotron .text-content {
         color: black;
@@ -702,7 +744,6 @@ nav li {
 
     /* info */
       .info {
-        margin: 2rem;
         display: block;
         margin-top: 90px;
       }
@@ -740,7 +781,7 @@ nav li {
         margin-top: 13rem;
         object-position: top;
       }
-      .info .subject {
+      .code .subject {
         width: 100%;
         margin: auto;
         display: flex;
@@ -777,6 +818,7 @@ nav li {
     /* Advantage */
       #home .advantage .subject, .advantage {
         display: block;
+        margin: 0;
       }
       .advantage .subtitle {
         margin-top: 28rem;
@@ -824,28 +866,47 @@ nav li {
         font-size: 2.5rem;
       }
 
-      .vid {
-        width: 60%;
-        padding-bottom: 2rem;
-      }
-      .vid img {
-        object-position: top;
+      .about-content img {
         width: 100%;
-        height: 100%;
+        height: 12rem;
+        margin: 0;
+        margin-left: 0;
       }
       .colour-box-small {
         width: 6rem;
         margin: 0;
         margin-left: 1rem;
       }
-
-
-      /* Contact */
-
-      .section-form {
+      .row-1, .row-2, .row-3, .row-4 {
+        display: block;
+      }
+      .parallax-inside {
+        width: auto;
+        height: 25rem;
+      }
+      .parallax img {
         width: 100%;
+        height: 15rem;
+        object-fit: cover;
+      }
+      #about .section {
         padding: 1rem;
       }
+      .parallax-page1, .parallax-page2, .parallax-page3 {
+        background-position: center;
+        object-position: center;
+      }
+
+      /* Team */
+      .member {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+      }
+      .member .text-content {
+        margin-top: 9rem;
+      }
+
 
       /* Footer */
 
@@ -946,6 +1007,9 @@ nav li {
       }
       .vid img {
         width: 70%;
+      }
+      .about-content p {
+        font-size: 1.2rem;
       }
 
   }
