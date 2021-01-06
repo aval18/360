@@ -909,6 +909,9 @@ nav li {
       .member .text-content {
         margin-top: 15rem;
       }
+      .flex {
+        display: block;
+      }
 
 
       /* Footer */
