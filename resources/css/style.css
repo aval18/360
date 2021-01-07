@@ -907,10 +907,7 @@ nav li {
         margin-bottom: 2rem;
       }
       .member .text-content {
-        margin-top: 15rem;
-      }
-      .flex {
-        display: block;
+        margin-top: 0;
       }
 
 
