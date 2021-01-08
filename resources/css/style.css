@@ -538,7 +538,6 @@ nav li {
     border-radius:50%;
     width: 10rem;
     height: 10rem;
-    margin: auto;
     position: absolute;
   }
   .flex {
@@ -910,7 +909,7 @@ nav li {
         margin-top: 9rem;
       }
       .member-photo {
-        margin-top: 0;
+        margin: 0;
       }
 
 
