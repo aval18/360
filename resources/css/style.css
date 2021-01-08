@@ -906,10 +906,10 @@ nav li {
         margin-bottom: 2rem;
       }
       .member .text-content {
-        margin-top: 9rem;
+        margin-top: 1rem;
       }
       .member-photo {
-        margin: 0;
+        position: relative;
       }
 
 
