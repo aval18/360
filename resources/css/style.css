@@ -909,6 +909,9 @@ nav li {
       .member .text-content {
         margin-top: 9rem;
       }
+      .member-photo {
+        margin-top: 0;
+      }
 
 
       /* Footer */
